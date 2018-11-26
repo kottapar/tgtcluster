@@ -1,0 +1,14 @@
+region              = "us-west1"
+zone                = "us-west1-c"
+credentials         = "../creds/terra-admin.json"
+instance-name       = ["master", "worker"]
+project-name        = "tgtcluster"
+network             = "tgtcluster-network"
+vm-type             = "n1-standard-1"
+os                  = "ubuntu-1804-bionic-v20181120"
+subnet-cidr         = "10.240.0.0/24"
+fw-int-proto        = ["icmp", "tcp", "udp"]
+fw-int-source-range = ["10.240.0.0/24", "10.200.0.0/16"]
+master-count        = "2"
+worker-count        = "2"
+scopes              = ["compute-rw", "storage-ro", "service-management", "service-control", "logging-write", "monitoring"]
