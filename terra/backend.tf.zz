@@ -1,8 +1,0 @@
-// configure the remote backend for TF
-terraform {
-  backend "gcs" {
-    bucket = "tgtcluster-tfstate"
-    credentials = "../creds/terra-admin.json"
-  }
-}
-
