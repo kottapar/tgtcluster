@@ -17,3 +17,7 @@ variable "worker-count" {}
 variable "scopes" {
   type = "list"
 }
+variable "lb-hchk-probe-cidr" {
+  type = "list"
+}
+variable "target-pool-ports" {}
